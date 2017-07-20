@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <style>
+    .slide_picture {
+      position: absolute;
+    }
+    .slide_picture_1 {
+      position: absolute;
+    }
+    .slide_picture_2 {
+      position: absolute;
+    }
+  </style>
+  
+  <script>
+$(function () {
+      setTimeout('rect()'); //アニメーションを実行
+    });
+
+    function rect() {
+      $(".slide_picture").animate({
+          left: "1000px" //要素を動かす位置
+      }, 8000).animate({
+        left: "-250px"　//要素を戻す位置
+      }, 0)
+      $(".slide_picture_1").animate({
+          left: "1000px" 
+      }, 8000).animate({
+        left: "-400px"　
+      }, 0)
+      $(".slide_picture_2").animate({
+          left: "1000px" 
+      }, 8000).animate({
+        left: "-600px"　
+      }, 0)
+      setTimeout("rect()", 3000);//アニメーションを繰り返す間隔
+    };
+</script>
+
+  </script>
+
+</head>
+<body>
+      <img src="0719/1.jpg" alt="" width="200" height="200" class="slide_picture">
+      <img src="0719/2.jpg" alt="" width="200" height="200" class="slide_picture_1">
+      <img src="0719/3.jpg" alt="" width="200" height="200" class="slide_picture_2">
+</body>
+</html>
