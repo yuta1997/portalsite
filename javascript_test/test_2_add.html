@@ -20,43 +20,31 @@
   </style>
 
 <script>
-var timer = false;
-var	wwidth = $(window).width();
-$(window).on("load resize",function() {
-	if (timer !== false) {
-			clearTimeout(timer);
-	}
-	timer = setTimeout(function() {
-			wwidth = $(window).width();
-	}, 200);
-});
 
-
-$(function () {
+	$(function () {
     setTimeout('rect()'); //アニメーションを実行
-});
+	});
 
-function rect() {
+	function rect() {
 		$(".slide_picture").animate({
-		    left: wwidth//要素を動かす位置
-		}, 8000).animate({
-		  left: "-250px"　//要素を戻す位置
+		    left: "100%"//要素を動かす位置
+		}, 10000).animate({
+		  left: "-140%"　//要素を戻す位置
 		}, 0)
 		$(".slide_picture_1").animate({
-		    left: wwidth 
-		}, 8000).animate({
-		  left: "-400px"　
+		    left: "120%" 
+		}, 10000).animate({
+		  left: "-120%"　
 		}, 0)
 		$(".slide_picture_2").animate({
-		    left: wwidth
-		}, 8000).animate({
-		  left: "-600px"　
+		    left: "140%"
+		}, 10000).animate({
+		  left: "-100%"　
 		}, 0)
-		setTimeout("rect()", 3000);//アニメーションを繰り返す間隔
-};
+		setTimeout("rect()", 100);//アニメーションを繰り返す間隔
+	};
 </script>
 
-  </script>
 
 </head>
 <body>
