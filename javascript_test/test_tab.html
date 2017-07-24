@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="test_tab.css">
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function(){
+
+          var width=200;
+          var height=200;
+          var time=1500;
+          var speed=1000;
+
+          $("slide ul li").css({"posithon":"relative","overflow":"hidden","width":width,"height":height});
+          $("slide ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+          $("slide ul li").addClass("active").show();
+
+          setInterval(function(){
+
+            var active = $("#slide ul li.active");
+
+            var next = active.next("li").length?active.next("li"):$("#slide ul li:first");
+
+            active.fadeOut(speed).removeClass("active");
+
+            next.fadeIn(speed).addClass("active");
+          },time)
+          
+    });
+
+
+  $(function(){
+
+          var width=200;
+          var height=200;
+          var time=1500;
+          var speed=1000;
+
+          $("slide2 ul li").css({"posithon":"relative","overflow":"hidden","width":width,"height":height});
+          $("slide2 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+          $("slide2 ul li").addClass("active").show();
+
+          setInterval(function(){
+
+            var active = $("#slide2 ul li.active");
+
+            var next = active.next("li").length?active.next("li"):$("#slide2 ul li:first");
+
+            active.fadeOut(speed).removeClass("active");
+
+            next.fadeIn(speed).addClass("active");
+          },time)
+          
+    });
+
+
+  $(function(){
+
+          var width=200;
+          var height=200;
+          var time=1500;
+          var speed=1000;
+
+          $("slide3 ul li").css({"posithon":"relative","overflow":"hidden","width":width,"height":height});
+          $("slide3 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+          $("slide3 ul li").addClass("active").show();
+
+          setInterval(function(){
+
+            var active = $("#slide3 ul li.active");
+
+            var next = active.next("li").length?active.next("li"):$("#slide3 ul li:first");
+
+            active.fadeOut(speed).removeClass("active");
+
+            next.fadeIn(speed).addClass("active");
+          },time)
+          
+    });
+
+  $(function() {
+
+    $("#tags span").click(function() {
+
+      var tags = $(this).attr('id');
+    $("#tags span").removeClass('select');
+    $(this).addClass('select');
+    $("#choice div").fadeOut(500);
+      if(tags == 'tab02') {
+          $("#choice .tab02").fadeIn(500);
+      } else if(tags == 'tab01') {
+          $("#choice .tab01").fadeIn(500);
+      } else if(tags == 'tab03') {
+          $("#choice .tab03").fadeIn(500);
+      } else {
+        $("#choice div").fadeIn(500);
+      }
+    });
+  });
+
+</script>
+</head>
+<body>
+<div id="tags">
+  <span class="select">all</span>
+  <span id="tab01">tab01</span>
+  <span id="tab02">tab02</span>
+  <span id="tab03">tab03</span>
+</div>
+
+<div id="choice">
+  <div id="slide" class="tab01">
+      <ul>
+        <li><img src="0719/1.jpg" alt="" width="200" height="200"></li>
+
+        <li><img src="0719/2.jpg" alt="" width="200" height="200"></li>
+
+        <li><img src="0719/3.jpg" alt="" width="200" height="200"></li>
+
+      </ul>
+
+    </div>
+  <div id="slide2" class="tab02">
+      <ul>
+        <li><img src="0719/3.jpg" alt="" width="200" height="200"></li>
+
+        <li><img src="0719/2.jpg" alt="" width="200" height="200"></li>
+
+        <li><img src="0719/1.jpg" alt="" width="200" height="200"></li>
+
+      </ul>
+
+    </div>
+  <div id="slide3" class="tab03">
+      <ul>
+        <li><img src="0719/3.jpg" alt="" width="200" height="200"></li>
+
+        <li><img src="0719/2.jpg" alt="" width="200" height="200"></li>
+
+        <li><img src="0719/1.jpg" alt="" width="200" height="200"></li>
+
+      </ul>
+
+    </div>
+  </div>
+
+</body>
+</html>
