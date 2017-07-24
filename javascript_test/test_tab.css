@@ -1,6 +1,14 @@
 .select { border-bottom:solid 1px #000; padding-bottom:5px; }
+#home {
+margin:0 auto;
+position:relative;
+}
 
-
+#home img {
+position:absolute;
+left:0;
+top:0;
+}
 #slide {
 
 margin:0 auto;
