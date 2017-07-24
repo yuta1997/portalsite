@@ -8,11 +8,6 @@ body {
 	line-height: 18px;
 }
 
-#slideshow{
-	margin-top:1%;
-	margin-bottom:1%;
-}
-
 #box{
 
 	overflow:scroll;
@@ -32,3 +27,5 @@ body {
 	margin-bottom:10px;
 	margin-left:0;
 }
+
+
