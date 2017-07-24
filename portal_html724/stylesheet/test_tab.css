@@ -1,8 +1,19 @@
 .select { border-bottom:solid 1px #000; padding-bottom:5px; }
+#home {
+width: 200;
+height: 150;
+margin:0 auto;
+position:relative;
+}
 
+#home img {
+position:absolute;
+left:0;
+top:0;
+}
 #slide {
-width:500px;
-height:500px;
+width: 200;
+height: 150;
 margin:0 auto;
 position:relative;
 }
@@ -14,8 +25,8 @@ top:0;
 }
 
 #slide2 {
-width:500px;
-height:500px;
+width: 200;
+height: 150;
 margin:0 auto;
 position:relative;
 }
@@ -27,13 +38,37 @@ top:0;
 }
 
 #slide3 {
-width:500px;
-height:500px;
+width: 200;
+height: 150;
 margin:0 auto;
 position:relative;
 }
 
 #slide3 img {
+position:absolute;
+left:0;
+top:0;
+}
+#slide4 {
+width:200;
+height:150;
+margin:0 auto;
+position:relative;
+}
+
+#slide4 img {
+position:absolute;
+left:0;
+top:0;
+}
+#slide5 {
+width:200;
+height:150;
+margin:0 auto;
+position:relative;
+}
+
+#slide5 img {
 position:absolute;
 left:0;
 top:0;
@@ -45,3 +80,4 @@ top:0;
  li {
     display: inline-block;
 }
+

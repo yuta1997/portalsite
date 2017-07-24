@@ -1,5 +1,6 @@
 body {
-	width:100%;
+	height: 100%;
+	overflow-x:hidden;
 	margin:0px;
 	padding:0px;
 	color:#666;
@@ -21,7 +22,7 @@ div#infotitle {
 }
 
 #box{
-overflow:scroll;
+overflow-x:scroll;
 height:200px;
 }
 
@@ -70,6 +71,11 @@ div#scedulepdf{
 div#calendar{
 	text-align : center
 }
+
+div#calendarimg{
+	margin-top: 20px;
+}
+
 header{
 	background: #FFFFFF;
 }

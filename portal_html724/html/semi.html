@@ -12,114 +12,196 @@
  		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-	<!--
-								ここからタブ表示スクリプト　　　　　　　　　　　　　　
-								　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
-				 		<script>
-				    $(function(){
+	 <script>
 
-				          var width=200;
-				          var height=200;
-				          var time=3000;
-				          var speed=1000;
+	  $(document).ready(function(){
 
-				          $("slide ul li").css({"posithon":"relative","overflow":"hidden","width":width,"height":height});
-				          $("slide ul li").hide().css({"posotion":"absolute","top":0,"left":0});
-				          $("slide ul li").addClass("active").show();
-
-				          setInterval(function(){
-
-				            var active = $("#slide ul li.active");
-
-				            var next = active.next("li").length?active.next("li"):$("#slide ul li:first");
-
-				            active.fadeOut(speed).removeClass("active");
-
-				            next.fadeIn(speed).addClass("active");
-				          },time)
-				          
-				    });
+	    $('.head').click(function(){
+	        $(this).next('.row').stop(true, true).slideToggle();
+	    });
+	});
 
 
-				  $(function(){
+	    $(function(){
 
-				          var width=500;
-				          var height=500;
-				          var time=3000;
-				          var speed=1000;
+	          var time=1500;
+	          var speed=1000;
+        	  $("slide ul li").css({"posithon":"relative","overflow":"hidden"});
+	          $("slide ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+	          $("slide ul li").addClass("active").show();
 
-				          $("slide2 ul li").css({"posithon":"relative","overflow":"hidden","width":width,"height":height});
-				          $("slide2 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
-				          $("slide2 ul li").addClass("active").show();
+	          setInterval(function(){
 
-				          setInterval(function(){
+	            var active = $("#slide ul li.active");
 
-				            var active = $("#slide2 ul li.active");
+	            var next = active.next("li").length?active.next("li"):$("#slide ul li:first");
 
-				            var next = active.next("li").length?active.next("li"):$("#slide2 ul li:first");
+	            active.fadeOut(speed).removeClass("active");
 
-				            active.fadeOut(speed).removeClass("active");
-
-				            next.fadeIn(speed).addClass("active");
-				          },time)
-				          
-				    });
+	            next.fadeIn(speed).addClass("active");
+	          },time)
+	          
+	    });
 
 
-				  $(function(){
+	  $(function(){
 
-				          var time=3000;
-				          var speed=1000;
+	          var time=1500;
+	          var speed=1000;
+	          $("slide ul li").css({"posithon":"relative","overflow":"hidden"});
+	          $("slide2 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+	          $("slide2 ul li").addClass("active").show();
+
+	          setInterval(function(){
+
+	            var active = $("#slide2 ul li.active");
+
+	            var next = active.next("li").length?active.next("li"):$("#slide2 ul li:first");
+
+	            active.fadeOut(speed).removeClass("active");
+
+	            next.fadeIn(speed).addClass("active");
+	          },time)
+	          
+	    });
 
 
-				          setInterval(function(){
+	  $(function(){
 
-				            var active = $("#slide3 ul li.active");
+	          var time=1500;
+	          var speed=1000;
+	          $("slide ul li").css({"posithon":"relative","overflow":"hidden"});
+	          $("slide3 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+	          $("slide3 ul li").addClass("active").show();
 
-				            var next = active.next("li").length?active.next("li"):$("#slide3 ul li:first");
+	          setInterval(function(){
 
-				            active.fadeOut(speed).removeClass("active");
+	            var active = $("#slide3 ul li.active");
 
-				            next.fadeIn(speed).addClass("active");
-				          },time)
-				          
-				    });
+	            var next = active.next("li").length?active.next("li"):$("#slide3 ul li:first");
 
-				  $(function() {
+	            active.fadeOut(speed).removeClass("active");
 
-				    $("#tags span").click(function() {
+	            next.fadeIn(speed).addClass("active");
+	          },time)
+	          
+	    });
 
-				      var tags = $(this).attr('id');
-				    $("#tags span").removeClass('select');
-				    $(this).addClass('select');
-				    $("#choice div").fadeOut(500);
-				      if(tags == 'tab02') {
-				          $("#choice .tab02").fadeIn(500);
-				      } else if(tags == 'tab01') {
-				          $("#choice .tab01").fadeIn(500);
-				      } else if(tags == 'tab03') {
-				          $("#choice .tab03").fadeIn(500);
-				      } else {
-				        $("#choice div").fadeIn(500);
-				      }
-				    });
-				  });
+	  $(function(){
 
-				</script>
-	<!--
+	          var time=1500;
+	          var speed=1000;
+	          $("slide ul li").css({"posithon":"relative","overflow":"hidden"});
+	          $("slide4 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+	          $("slide4 ul li").addClass("active").show();
 
-												ここまでタブ表示スクリプト
+	          setInterval(function(){
 
-	-->
+	            var active = $("#slide4 ul li.active");
 
-	</head>
+	            var next = active.next("li").length?active.next("li"):$("#slide4 ul li:first");
+
+	            active.fadeOut(speed).removeClass("active");
+
+	            next.fadeIn(speed).addClass("active");
+	          },time)
+	          
+	    });
+
+	    $(function(){
+
+	          var time=1500;
+	          var speed=1000;
+	          $("slide ul li").css({"posithon":"relative","overflow":"hidden"});
+	          $("slide5 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+	          $("slide5 ul li").addClass("active").show();
+
+	          setInterval(function(){
+
+	            var active = $("#slide5 ul li.active");
+
+	            var next = active.next("li").length?active.next("li"):$("#slide5 ul li:first");
+
+	            active.fadeOut(speed).removeClass("active");
+
+	            next.fadeIn(speed).addClass("active");
+	          },time)
+	          
+	    });
+
+	    $(function(){
+
+	          var time=1500;
+	          var speed=1000;
+	          $("slide ul li").css({"posithon":"relative","overflow":"hidden"});
+	          $("home ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+	          $("home ul li").addClass("active").show();
+
+	          setInterval(function(){
+
+	            var active = $("#home ul li.active");
+
+	            var next = active.next("li").length?active.next("li"):$("#home ul li:first");
+
+	            active.fadeOut(speed).removeClass("active");
+
+	            next.fadeIn(speed).addClass("active");
+	          },time)
+	          
+	    });
+
+	  $(function() {
+
+	    $("#tags span").click(function() {
+
+	      var tags = $(this).attr('id');
+	    $("#tags span").removeClass('select');
+	    $(this).addClass('select');
+	    $("#choice div").fadeOut(500);
+	      if(tags == 'tab02') {
+	          $("#choice .tab02").fadeIn(500);
+	      } else if(tags == 'tab01') {
+	          $("#choice .tab01").fadeIn(500);
+	      } else if(tags == 'tab03') {
+	          $("#choice .tab03").fadeIn(500);
+	      } else if(tags == 'tab04') {
+	          $("#choice .tab04").fadeIn(500);
+	      } else if(tags == 'tab05') {
+	          $("#choice .tab05").fadeIn(500);
+	      } else if(tags == 'tab06') {
+	          $("#choice .tab01").fadeIn(500);
+	      } else if(tags == 'tab07') {
+	          $("#choice .tab02").fadeIn(500);
+	      } else if(tags == 'tab08') {
+	          $("#choice .tab03").fadeIn(500);
+	      } else if(tags == 'tab09') {
+	          $("#choice .tab04").fadeIn(500);
+	      } else if(tags == 'tab10') {
+	          $("#choice .tab05").fadeIn(500);
+	      } else if(tags == 'tab011') {
+	          $("#choice .tab01").fadeIn(500);
+	      } else if(tags == 'tab12') {
+	          $("#choice .tab02").fadeIn(500);
+	      } else if(tags == 'tab13') {
+	          $("#choice .tab03").fadeIn(500);
+	      } else if(tags == 'tab14') {
+	          $("#choice .tab04").fadeIn(500);
+	      } else if(tags == 'tab15') {
+	          $("#choice .tab05").fadeIn(500);
+	      }  else {
+	          $("#choice div").fadeIn(500);
+	      }
+	    });
+	  });
+
+	</script>
+</head>
 
 	<body>
 			<!-- ヘッダー（タイトル） -->
 		<header>
 			<a href="../index.html"><img src="../imgs/title.png" title="title"></a>
 		</header>
-
 		<div id="pagetitle">
 			<img src="../imgs/semi.png" title=semi>
 		</div>
@@ -137,10 +219,11 @@
 							<div id="open" style="display:none;clear:both;">
 
 								<div id="tags">
-								  <span class="select"></span>
-								  <span id="tab01">Aゼミ</span><br>
-								  <span id="tab02">Bゼミ</span><br>
-								  <span id="tab03">Cゼミ</span><br>
+								    <span id="tab01">ゼミ01</span><br>
+								    <span id="tab02">ゼミ02</span><br>
+								    <span id="tab03">ゼミ03</span><br>
+								    <span id="tab04">ゼミ04</span><br>
+									<span id="tab05">ゼミ05</span><br>
 								</div>
 
 							</div><br>
@@ -150,22 +233,29 @@
 							</div>
 						
 							<div id="open2" style="display:none;clear:both;">
-
-								＊＊ゼミ<br>
-								＊＊ゼミ<br>
+								<div id="tags">
+									<span id="tab06">ゼミ06</span><br>
+								    <span id="tab07">ゼミ07</span><br>
+								    <span id="tab08">ゼミ08</span><br>
+								    <span id="tab09">ゼミ09</span><br>
+								    <span id="tab10">ゼミ10</span><br>
+								</div>
 
 							</div><br>
 
 							<div onclick="obj=document.getElementById('open3').style; obj.display=(obj.display=='none')?'block':'none';">
 								<a style="cursor:pointer;">  ▼ 電気エネルギー科</a>
 							</div>
-						
+							
 							<div id="open3" style="display:none;clear:both;">
-
-								＊＊ゼミ<br>
-								＊＊ゼミ<br>
-								＊＊ゼミ<br>
-						</div>
+								<div id="tags">
+								    <span id="tab11">ゼミ11</span><br>
+								    <span id="tab12">ゼミ12</span><br>
+								    <span id="tab13">ゼミ13</span><br>
+								    <span id="tab14">ゼミ14</span><br>
+								    <span id="tab15">ゼミ15</span><br>
+							  	</div>
+							</div>
 					</section>
 				</div>
 
@@ -180,7 +270,6 @@
 									        <li><img src="../imgs/2.jpg"></li>
 
 									        <li><img src="../imgs/3.jpg"></li>
-
 									      </ul>
 
 									    </div>
@@ -191,7 +280,6 @@
 									        <li><img src="../imgs/2.jpg"></li>
 
 									        <li><img src="../imgs/1.jpg"></li>
-
 									      </ul>
 
 									    </div>
@@ -202,27 +290,13 @@
 									        <li><img src="../imgs/2.jpg"></li>
 
 									        <li><img src="../imgs/1.jpg"></li>
-
 									      </ul>
-
-									    </div>
 									  </div>
+							</div>
 						</section>
 					</section>
 				</div>
 			</section>
 		</section>
-				<footer>
-			<div id="footer">
-
-				<hr color="000000" align="center">
-
-				<CENTER>
-					<br><br>
-					<font size="5">update 2017 07 24</font><br>
-				</CENTER>
-			</div>
-		</footer>
-		
 	</body>
 </html>
