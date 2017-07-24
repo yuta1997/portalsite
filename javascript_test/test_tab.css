@@ -1,8 +1,8 @@
 .select { border-bottom:solid 1px #000; padding-bottom:5px; }
 
+
 #slide {
-width:200px;
-height:200px;
+
 margin:0 auto;
 position:relative;
 }
@@ -14,8 +14,7 @@ top:0;
 }
 
 #slide2 {
-width:200px;
-height:200px;
+
 margin:0 auto;
 position:relative;
 }
@@ -27,13 +26,34 @@ top:0;
 }
 
 #slide3 {
-width:200px;
-height:200px;
+
 margin:0 auto;
 position:relative;
 }
 
 #slide3 img {
+position:absolute;
+left:0;
+top:0;
+}
+#slide4 {
+
+margin:0 auto;
+position:relative;
+}
+
+#slide4 img {
+position:absolute;
+left:0;
+top:0;
+}
+#slide5 {
+
+margin:0 auto;
+position:relative;
+}
+
+#slide5 img {
 position:absolute;
 left:0;
 top:0;
