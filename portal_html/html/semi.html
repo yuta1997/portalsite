@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>東北能開大青森校学生ポータルサイト</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheet/style.css" media="screen, tv, projection">
+		<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheet/test_tab.css">
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+ 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<!--
+								ここからタブ表示スクリプト　　　　　　　　　　　　　　
+								　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　-->
+				 		<script>
+				    $(function(){
+
+				          var width=200;
+				          var height=200;
+				          var time=3000;
+				          var speed=1000;
+
+				          $("slide ul li").css({"posithon":"relative","overflow":"hidden","width":width,"height":height});
+				          $("slide ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+				          $("slide ul li").addClass("active").show();
+
+				          setInterval(function(){
+
+				            var active = $("#slide ul li.active");
+
+				            var next = active.next("li").length?active.next("li"):$("#slide ul li:first");
+
+				            active.fadeOut(speed).removeClass("active");
+
+				            next.fadeIn(speed).addClass("active");
+				          },time)
+				          
+				    });
+
+
+				  $(function(){
+
+				          var width=500;
+				          var height=500;
+				          var time=3000;
+				          var speed=1000;
+
+				          $("slide2 ul li").css({"posithon":"relative","overflow":"hidden","width":width,"height":height});
+				          $("slide2 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
+				          $("slide2 ul li").addClass("active").show();
+
+				          setInterval(function(){
+
+				            var active = $("#slide2 ul li.active");
+
+				            var next = active.next("li").length?active.next("li"):$("#slide2 ul li:first");
+
+				            active.fadeOut(speed).removeClass("active");
+
+				            next.fadeIn(speed).addClass("active");
+				          },time)
+				          
+				    });
+
+
+				  $(function(){
+
+				          var time=3000;
+				          var speed=1000;
+
+
+				          setInterval(function(){
+
+				            var active = $("#slide3 ul li.active");
+
+				            var next = active.next("li").length?active.next("li"):$("#slide3 ul li:first");
+
+				            active.fadeOut(speed).removeClass("active");
+
+				            next.fadeIn(speed).addClass("active");
+				          },time)
+				          
+				    });
+
+				  $(function() {
+
+				    $("#tags span").click(function() {
+
+				      var tags = $(this).attr('id');
+				    $("#tags span").removeClass('select');
+				    $(this).addClass('select');
+				    $("#choice div").fadeOut(500);
+				      if(tags == 'tab02') {
+				          $("#choice .tab02").fadeIn(500);
+				      } else if(tags == 'tab01') {
+				          $("#choice .tab01").fadeIn(500);
+				      } else if(tags == 'tab03') {
+				          $("#choice .tab03").fadeIn(500);
+				      } else {
+				        $("#choice div").fadeIn(500);
+				      }
+				    });
+				  });
+
+				</script>
+	<!--
+
+												ここまでタブ表示スクリプト
+
+	-->
+
+	</head>
+
+	<body>
+			<!-- ヘッダー（タイトル） -->
+		<header>
+			<a href="../index.html"><img src="../imgs/title.png" title="title"></a>
+		</header>
+
+		<div id="pagetitle">
+			<img src="../imgs/semi.png" title=semi>
+		</div>
+		<section class="uk-container uk-container-center">
+			<section class="uk-grid">
+				<div id="semiinfo">
+					<section class="uk-width-medium-10-10 uk-width small-10-10 " style = "border: 1px solid">
+					<!--ゼミ情報-->
+						<img src="../imgs/semipageline.png">
+
+							<div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+								<a style="cursor:pointer;"> ▼  生産技術科</a>
+							</div>
+
+							<div id="open" style="display:none;clear:both;">
+
+								<div id="tags">
+								  <span class="select"></span>
+								  <span id="tab01">Aゼミ</span><br>
+								  <span id="tab02">Bゼミ</span><br>
+								  <span id="tab03">Cゼミ</span><br>
+								</div>
+
+							</div><br>
+				
+							<div onclick="obj=document.getElementById('open2').style; obj.display=(obj.display=='none')?'block':'none';">
+								<a style="cursor:pointer;">  ▼ 電子情報技術科</a>
+							</div>
+						
+							<div id="open2" style="display:none;clear:both;">
+
+								＊＊ゼミ<br>
+								＊＊ゼミ<br>
+
+							</div><br>
+
+							<div onclick="obj=document.getElementById('open3').style; obj.display=(obj.display=='none')?'block':'none';">
+								<a style="cursor:pointer;">  ▼ 電気エネルギー科</a>
+							</div>
+						
+							<div id="open3" style="display:none;clear:both;">
+
+								＊＊ゼミ<br>
+								＊＊ゼミ<br>
+								＊＊ゼミ<br>
+						</div>
+					</section>
+				</div>
+
+				<div id="semiphoto">
+					<section class="uk-width-medium-10-10 uk-width small-10-10 " style = "border: 0px solid">
+						<section class="uk-grid">
+							<div id="choice">
+									  <div id="slide" class="tab01">
+									      <ul>
+									        <li><img src="../imgs/1.jpg"></li>
+
+									        <li><img src="../imgs/2.jpg"></li>
+
+									        <li><img src="../imgs/3.jpg"></li>
+
+									      </ul>
+
+									    </div>
+									  <div id="slide2" class="tab02">
+									      <ul>
+									        <li><img src="../imgs/3.jpg"></li>
+
+									        <li><img src="../imgs/2.jpg"></li>
+
+									        <li><img src="../imgs/1.jpg"></li>
+
+									      </ul>
+
+									    </div>
+									  <div id="slide3" class="tab03">
+									      <ul>
+									        <li><img src="../imgs/3.jpg"></li>
+
+									        <li><img src="../imgs/2.jpg"></li>
+
+									        <li><img src="../imgs/1.jpg"></li>
+
+									      </ul>
+
+									    </div>
+									  </div>
+						</section>
+					</section>
+				</div>
+			</section>
+		</section>
+				<footer>
+			<div id="footer">
+
+				<hr color="000000" align="center">
+
+				<CENTER>
+					<br><br>
+					<font size="5">update 2017 07 24</font><br>
+				</CENTER>
+			</div>
+		</footer>
+		
+	</body>
+</html>

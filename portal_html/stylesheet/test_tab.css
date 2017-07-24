@@ -1,0 +1,47 @@
+.select { border-bottom:solid 1px #000; padding-bottom:5px; }
+
+#slide {
+width:500px;
+height:500px;
+margin:0 auto;
+position:relative;
+}
+
+#slide img {
+position:absolute;
+left:0;
+top:0;
+}
+
+#slide2 {
+width:500px;
+height:500px;
+margin:0 auto;
+position:relative;
+}
+
+#slide2 img {
+position:absolute;
+left:0;
+top:0;
+}
+
+#slide3 {
+width:500px;
+height:500px;
+margin:0 auto;
+position:relative;
+}
+
+#slide3 img {
+position:absolute;
+left:0;
+top:0;
+}
+ ul {
+  font-size: 0;
+}
+
+ li {
+    display: inline-block;
+}
