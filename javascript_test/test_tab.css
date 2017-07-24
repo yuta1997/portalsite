@@ -10,7 +10,8 @@ left:0;
 top:0;
 }
 #slide {
-
+width: 200;
+height: 200;
 margin:0 auto;
 position:relative;
 }
@@ -22,7 +23,8 @@ top:0;
 }
 
 #slide2 {
-
+width: 200;
+height: 200;
 margin:0 auto;
 position:relative;
 }
@@ -34,7 +36,8 @@ top:0;
 }
 
 #slide3 {
-
+width: 200;
+height: 200;
 margin:0 auto;
 position:relative;
 }
