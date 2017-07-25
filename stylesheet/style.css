@@ -8,7 +8,7 @@ body {
 	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
 
 	line-height: 10px;
-	background-image
+	background-image:url(“bground.jpg”);
 
 }
 
@@ -86,13 +86,4 @@ div#calendarimg{
 
 header{
 	background: #FFFFFF;
-}
-footer{
-
-	color: #FFBF00;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background: #424242;
-	height:10%;
 }
