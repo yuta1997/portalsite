@@ -1,0 +1,40 @@
+#content {
+    overflow: hidden;
+    width: 1900px;
+    position:relative;
+    top:0;
+    left:-70px;
+}
+#content .post {
+  list-style: none;
+  float: left;
+  margin: 0 auto;
+
+}
+#content ul {
+  font-size: 0;
+}
+
+#content li {
+    display: inline-block;
+}
+
+#content img {
+   height: 200px;
+}
+
+#slide {
+width:200px;
+height:200px;
+margin:0 auto;
+position:relative;
+}
+
+#slide img {
+position:absolute;
+left:0;
+top:0;
+}
+
+
+
