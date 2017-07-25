@@ -1,6 +1,17 @@
+html{
+
+	height:100%;
+
+	}
 body {
+	background-image: url(../imgs/bg.png);
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;  
+ 	background-color: #ffffff;
 	height: 100%;
-	overflow-x:hidden;/Users/ono/Desktop/portal_html724/stylesheet/style.css
+	overflow-x:hidden;
 	margin:0px;
 	padding:0px;
 	color:#666;
@@ -8,10 +19,7 @@ body {
 	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
 
 	line-height: 10px;
-	background-image:url(“bground.jpg”);
-
 }
-
 div#content {
 	margin-bottom: 10px;
 }
@@ -42,6 +50,10 @@ div#semiinfo{
 
 div#semiphoto{
 	margin-top: 20px;
+}
+
+div#semicontents{
+	margin-bottom: 20px;
 }
 
 /*ここからレポート状況スタイルシート*/
