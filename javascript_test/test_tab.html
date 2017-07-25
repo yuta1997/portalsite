@@ -7,13 +7,102 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script>
-    $(function(){
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
+  <script>
+
+    $(document).ready(function(){
+
+        $('#slide').hide(); //初期では非表示
+
+        $('tags').click(function() {
+
+            if($(this).hasClass('active')){
+
+                $('.area').hide();
+
+                $($(this).find('span').attr('href')).fadeOut();
+
+                $('tags').removeClass('active');
+
+            }else{
+
+                $('tags').removeClass('active');
+
+                $('.area').hide();
+                $($(this).find('span').attr('href')).fadeIn();
+
+                $(this).addClass('active');
+
+            }
+
+        })
+
+    });
+
+$(document).ready(function(){
+
+        $('#slide2').hide(); //初期では非表示
+
+        $('tags').click(function() {
+
+            if($(this).hasClass('active')){
+
+                $('.area').hide();
+
+                $($(this).find('span').attr('href')).fadeOut();
+
+                $('tags').removeClass('active');
+
+            }else{
+
+                $('tags').removeClass('active');
+
+                $('.area').hide();
+                $($(this).find('span').attr('href')).fadeIn();
+
+                $(this).addClass('active');
+
+            }
+
+        })
+
+    });
+
+$(document).ready(function(){
+
+        $('#slide3').hide(); //初期では非表示
+
+        $('tags').click(function() {
+
+            if($(this).hasClass('active')){
+
+                $('.area').hide();
+
+                $($(this).find('span').attr('href')).fadeOut();
+
+                $('tags').removeClass('active');
+
+            }else{
+
+                $('tags').removeClass('active');
+
+                $('.area').hide();
+                $($(this).find('span').attr('href')).fadeIn();
+
+                $(this).addClass('active');
+
+            }
+
+        })
+
+    });
+    $(function(){
+       
           var time=1500;
           var speed=1000;
 
-          $("slide ul li").css({"posithon":"relative","overflow":"hidden"});
+          $("slide ul li").css({"position":"relative","overflow":"hidden"});
           $("slide ul li").hide().css({"posotion":"relative","top":0,"left":0});
           $("slide ul li").addClass("active").show();
 
@@ -37,7 +126,7 @@
           var time=1500;
           var speed=1000;
 
-          $("slide2 ul li").css({"posithon":"relative","overflow":"hidden"});
+          $("slide2 ul li").css({"position":"relative","overflow":"hidden"});
           $("slide2 ul li").hide().css({"posotion":"relative","top":0,"left":0});
           $("slide2 ul li").addClass("active").show();
 
@@ -61,7 +150,7 @@
           var time=1500;
           var speed=1000;
 
-          $("slide3 ul li").css({"posithon":"relative","overflow":"hidden"});
+          $("slide3 ul li").css({"position":"relative","overflow":"hidden"});
           $("slide3 ul li").hide().css({"posotion":"relative","top":0,"left":0});
           $("slide3 ul li").addClass("active").show();
 
@@ -101,47 +190,54 @@
 </script>
 </head>
 <body>
-<div id="tags">
-  <span class="select">all</span>
-  <span id="tab01">tab01</span>
-  <span id="tab02">tab02</span>
-  <span id="tab03">tab03</span>
-</div>
-<div id="choice">
-  <div id="slide" class="tab01">
-      <ul>
-        <li><img src="0719/1.jpg" ></li>
-
-        <li><img src="0719/2.jpg" ></li>
-
-        <li><img src="0719/3.jpg" ></li>
-
-      </ul>
-
-    </div>
-  <div id="slide2" class="tab02">
-      <ul>
-        <li><img src="0719/3.jpg" ></li>
-
-        <li><img src="0719/2.jpg" ></li>
-
-        <li><img src="0719/1.jpg" ></li>
-
-      </ul>
-
-    </div>
-  <div id="slide3" class="tab03">
-      <ul>
-        <li><img src="0719/3.jpg" ></li>
-
-        <li><img src="0719/2.jpg" ></li>
-
-        <li><img src="0719/1.jpg" ></li>
-
-      </ul>
-
-    </div>
+<div >
+  <div id="tags">
+    <span class="select">all</span>
+    <span id="tab01">tab01</span>
+    <span id="tab02">tab02</span>
+    <span id="tab03">tab03</span>
   </div>
+</div>
+  <div id="choice">
+    <div>
+        <div id="slide" class="tab01">
+            <ul>
+              <li><img src="0719/1.jpg" ></li>
 
+              <li><img src="0719/2.jpg" ></li>
+
+              <li><img src="0719/3.jpg" ></li>
+
+            </ul>
+
+        </div>
+    </div>
+    <div >
+      <div id="slide2" class="tab02">
+          <ul>
+            <li><img src="0719/3.jpg" ></li>
+
+            <li><img src="0719/2.jpg" ></li>
+
+            <li><img src="0719/1.jpg" ></li>
+
+          </ul>
+
+        </div>
+    </div>
+    <div>
+      <div id="slide3" class="tab03">
+          <ul>
+            <li><img src="0719/3.jpg" ></li>
+
+            <li><img src="0719/2.jpg" ></li>
+
+            <li><img src="0719/1.jpg" ></li>
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
 </body>
 </html>

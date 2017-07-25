@@ -1,3 +1,8 @@
+.area {
+    display: none;
+}
+
+
 .select { border-bottom:solid 1px #000; padding-bottom:5px; }
 #home {
 margin:0 auto;
