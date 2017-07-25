@@ -127,14 +127,14 @@
 
                 $($(this).find('#slide5').attr('href')).fadeOut();
 
-                $('#slide3').removeClass('active');
+                $('#slide5').removeClass('active');
 
             }else{
 
-                $('#slide3').removeClass('active');
+                $('#slide5').removeClass('active');
 
-                $('#slide3').hide();
-                $($(this).find('#slide3').attr('href')).fadeIn();
+                $('#slide5').hide();
+                $($(this).find('#slide5').attr('href')).fadeIn();
 
                 $(this).addClass('active');
 
@@ -290,7 +290,7 @@
           $("#choice .tab04").fadeIn(500);
       } else if(tags == 'tab10') {
           $("#choice .tab05").fadeIn(500);
-      } else if(tags == 'tab011') {
+      } else if(tags == 'tab11') {
           $("#choice .tab01").fadeIn(500);
       } else if(tags == 'tab12') {
           $("#choice .tab02").fadeIn(500);
