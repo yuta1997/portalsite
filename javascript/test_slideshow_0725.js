@@ -14,4 +14,5 @@ $(function(){
 	};
 	
 	$('.post ul').css("margin-left", current+"px");	
-	}
+};
+

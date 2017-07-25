@@ -135,6 +135,7 @@
 
                 $('#slide5').hide();
                 $($(this).find('#slide5').attr('href')).fadeIn();
+<<<<<<< HEAD
 
                 $(this).addClass('active');
 
@@ -425,6 +426,8 @@
 
                 $('#slide15').hide();
                 $($(this).find('#slide15').attr('href')).fadeIn();
+=======
+>>>>>>> 8afdfa1afb334706b790de6750d9fc54984af422
 
                 $(this).addClass('active');
 
@@ -807,9 +810,15 @@
       } else if(tags == 'tab09') {
           $("#choice .tab09").fadeIn(500);
       } else if(tags == 'tab10') {
+<<<<<<< HEAD
           $("#choice .tab10").fadeIn(500);
       } else if(tags == 'tab11') {
           $("#choice .tab11").fadeIn(500);
+=======
+          $("#choice .tab05").fadeIn(500);
+      } else if(tags == 'tab11') {
+          $("#choice .tab01").fadeIn(500);
+>>>>>>> 8afdfa1afb334706b790de6750d9fc54984af422
       } else if(tags == 'tab12') {
           $("#choice .tab12").fadeIn(500);
       } else if(tags == 'tab13') {
