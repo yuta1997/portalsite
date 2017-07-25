@@ -1,12 +1,15 @@
 body {
-	width:100%;
+	height: 100%;
+	overflow-x:hidden;/Users/ono/Desktop/portal_html724/stylesheet/style.css
 	margin:0px;
 	padding:0px;
 	color:#666;
-font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
+	back
+	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
 
 	line-height: 10px;
-	background: #FFFFFF;
+	background-image
+
 }
 
 div#content {
@@ -21,7 +24,7 @@ div#infotitle {
 }
 
 #box{
-overflow:scroll;
+overflow-x:scroll;
 height:200px;
 }
 
@@ -55,12 +58,18 @@ div#incidents{
 	margin-top: 20px;
 	text-align: center;
 }
+
+div#pageanchor{
+	text-align: center;
+}
+
 /*ここから行事予定スタイルシート*/
 div#scedule{
 	margin-top: 20px;
 }
+
 div#sceduleimg{
-	text-align : center
+	text-align :center
 }
 
 div#scedulepdf{
@@ -70,6 +79,11 @@ div#scedulepdf{
 div#calendar{
 	text-align : center
 }
+
+div#calendarimg{
+	margin-top: 20px;
+}
+
 header{
 	background: #FFFFFF;
 }
@@ -80,6 +94,5 @@ footer{
 	bottom: 0;
 	width: 100%;
 	background: #424242;
-	height:150px;
+	height:10%;
 }
-

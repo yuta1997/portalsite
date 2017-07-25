@@ -3,12 +3,34 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>東北能開大青森校学生ポータルサイト</title>
-<<<<<<< HEAD
+		<link rel="stylesheet" type="text/css" href="../stylesheet/javascript.css" media="screen, tv, projection">
 		<link rel="stylesheet" type="text/css" href="../stylesheet/style.css" media="screen, tv, projection">
-=======
-		<link rel="stylesheet" type="text/css" href="stylesheets/home.css" media="screen, tv, projection">
->>>>>>> 75d3271050a1850a56a392b799ae6ff2422723f7
 		<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css" />
+
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+	  	$(function(){
+			setInterval("photoslide()", 50);	
+		});
+	 
+		var current = 0;
+		function photoslide(){
+				current -= 1;
+			if(current == -300){
+				var copy = $(".post ul li:first").clone();
+				$(".post ul li:first").remove();
+				$(".post ul").append(copy);
+				current = 0;
+			};
+	
+			$('.post ul').css("margin-left", current+"px");	
+		}
+
+  		</script>
+
 	</head>
 
 	<body>
@@ -16,37 +38,46 @@
 		<header>
 			<a href="../index.html"><img src="../imgs/title.png" title="title"></a>
 		</header>
-		<div id="pagetitle">
-			<img src="../imgs/calendar.png">
-		</div>
 
-<<<<<<< HEAD
-			<section class="uk-container uk-container-center">
-				<section class='uk-width-medium-10-10 width-medium-10-10' style="border: 1px solid">
-					<div id="calendar">
-						<img src="../imgs/calendar_page.png">
-					</div>
-				</section>
+		<section class="uk-container uk-container-top">
+			
+			<section class='uk-width-medium-10-10 uk-width-small-10-10'>
+		
+				<div id="content" class="post">
+
+  					<ul> 
+
+  						<img src="../imgs/1.jpg" width="350">
+ 
+  						<img src="../imgs/2.jpg" width="350">
+
+						<img src="../imgs/3.jpg" width="350">
+
+  						<img src="../imgs/4.jpg" width="350">
+
+  						<img src="../imgs/1.jpg" width="350">
+
+  					</ul>
+
+				</div>
+
 			</section>
+		</section>
 
-			
-		<footer>
-			<div id="footer">
+		<section class="uk-container uk-container-center">
 
-				<hr color="000000" align="center">
-
-				<CENTER>
-					<br><br>
-					<font size="5">update 2017 07 24</font><br>
-				</CENTER>
+			<div id="pagetitle">
+				<img src="../imgs/calendar.png">
 			</div>
-		</footer>
 
-=======
-		<div id="calendar">
-			<img src="../imgs/calendar_page.png">
-		</div>
+			<div id="calendarimg">
+					<section class='uk-width-medium-10-10 width-medium-10-10' style="border: 1px solid">
+						<div id="calendar">
+							<img src="../imgs/calendar_page.png">
+						</div>
+					</section>
+			</div>
+		</section>
 			
->>>>>>> 75d3271050a1850a56a392b799ae6ff2422723f7
 	</body>
 </html>

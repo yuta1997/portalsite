@@ -2,22 +2,76 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>東北能開大青森校学生ポータルサイト</title>
-<<<<<<< HEAD
 		<link rel="stylesheet" type="text/css" href="../stylesheet/style.css" media="screen, tv, projection">
 		<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css" />
+		<link rel="stylesheet" type="text/css" href="../stylesheet/javascript.css" media="screen, tv, projection">
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+		 $(function(){
+			setInterval("photoslide()", 50);	
+		});
+	 
+		var current = 0;
+		function photoslide(){
+				current -= 1;
+			if(current == -300){
+				var copy = $(".post ul li:first").clone();
+				$(".post ul li:first").remove();
+				$(".post ul").append(copy);
+				current = 0;
+			};
+	
+			$('.post ul').css("margin-left", current+"px");	
+		}
+
+  </script>
+
 	</head>
 
 	<body>
-			<!-- ヘッダー（タイトル） -->
+
 		<header>
 			<a href="../index.html"><img src="../imgs/title.png" title="title"></a>
 		</header>
+
+		<section class="uk-container uk-container-top">
+			
+			<section class='uk-width-medium-10-10 uk-width-small-10-10'>
+		
+				<div id="content" class="post">
+
+  					<ul> 
+
+  						<img src="../imgs/1.jpg" width="350">
+ 
+  						<img src="../imgs/2.jpg" width="350">
+
+						<img src="../imgs/3.jpg" width="350">
+
+  						<img src="../imgs/4.jpg" width="350">
+
+  						<img src="../imgs/1.jpg" width="350">
+
+  					</ul>
+
+				</div>
+
+			</section>
+		</section>
+
+		<section class="uk-container uk-container-center">
+
 		<div id="pagetitle">
 			<img src="../imgs/report.png" title="report">
 		</div>
 
-		<section class="uk-container uk-container-center">
 			<div id="reportinfo">
 				<section class="uk-width-medium10-10 uk-width-small-10-10" style="border:1px solid">
 						<img src="../imgs/reposyutu.png">
@@ -36,72 +90,10 @@
 						</div><br>
 
 						<div id="open2" style="display:none;clear:both;">
-						<img src="../imgs/kari.png" title="report"><br><br>
-					</div>
+							<img src="../imgs/kari.png" title="report"><br><br>
+						</div>
 				</section>
 			</div>
 		</section>
-		
-		<footer>
-			<div id="footer">
-
-				<hr color="000000" align="center">
-
-				<CENTER>
-					<br><br>
-					<font size="5">update 2017 07 24</font><br>
-				</CENTER>
-			</div>
-		</footer>
-
-
-=======
-	</head>
-
-	<header class="title">
-
-	<section class='title' style="border: 1px solid">
-
-		<a href="home.html"><font size="32" color="white" face="impact">東北能開大青森校学生ポータルサイト</font></a>
-
-	</section>
-	</header>
-	<br>
-		<br>
-
-		<body bgcolor="silver" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
-		<img src="../imgs/report.png" title="report"><br>
-
-	<div style="float:left;">
-
-	<section class="maincontents">
-
-	<section class='reportinfo' style="border: 1px solid">
-
-		<img src="../imgs/reposyutu.png" title="report"><br>
-	
-		<div onclick="obj=document.getElementById('open1').style; obj.display=(obj.display=='none')?'block':'none';">
-		<a style="cursor:pointer;">**先生</a>
-		</div><br>
-		<div id="open1" style="display:none;clear:both;">
-
-		<img src="../imgs/kari.png" title="report"><br>
-		<br>
-		</div>
-			
-
-		<div onclick="obj=document.getElementById('open2').style; obj.display=(obj.display=='none')?'block':'none';">
-		<a style="cursor:pointer;">**先生</a>
-		</div><br>
-		<div id="open2" style="display:none;clear:both;">
-
-		<img src="../imgs/kari.png" title="report"><br>
-		<br>
-		</div>
-		</section>
-		</section>
-	</div style="clear:both;">
-	
->>>>>>> 75d3271050a1850a56a392b799ae6ff2422723f7
 	</body>
 </html>

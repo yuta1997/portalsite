@@ -13,24 +13,24 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script>
-	  	$(function(){
-			setInterval("photoslide()", 50);	
-		});
-	 
-		var current = 0;
-		function photoslide(){
-				current -= 1;
-			if(current == -300){
-				var copy = $(".post ul li:first").clone();
-				$(".post ul li:first").remove();
-				$(".post ul").append(copy);
-				current = 0;
-			};
-	
-			$('.post ul').css("margin-left", current+"px");	
-		}
+		  	$(function(){
+				setInterval("photoslide()", 50);	
+			});
+		 
+			var current = 0;
+			function photoslide(){
+					current -= 1;
+				if(current == -300){
+					var copy = $(".post ul li:first").clone();
+					$(".post ul li:first").remove();
+					$(".post ul").append(copy);
+					current = 0;
+				};
+		
+				$('.post ul').css("margin-left", current+"px");	
+			}
 
-  </script>
+  		</script>
 
 	</head>
 
@@ -41,10 +41,13 @@
 		</header>
 				<!-- トップ画像 -->
 		<section class="uk-container uk-container-top">
+			
 			<section class='uk-width-medium-10-10 uk-width-small-10-10'>
 		
-			<div id="content" class="post">
+				<div id="content" class="post">
+
   					<ul> 
+
   						<img src="imgs/1.jpg" width="350">
  
   						<img src="imgs/2.jpg" width="350">
@@ -55,8 +58,8 @@
 
   						<img src="imgs/1.jpg" width="350">
 
- 
   					</ul>
+
 				</div>
 
 			</section>
@@ -81,7 +84,6 @@
 							<p>beatmania IIDX 8th style</p>
 							<p>beatmania IIDX 9th style</p>
 							<p>beatmania IIDX 11 RED</p>
-
 						</div>
 					</div>
 				</section>
@@ -108,17 +110,4 @@
 			</section>
 		</section>
 	</body>
-
-		<footer>
-			<div id="footer">
-
-				<hr color="000000" align="center">
-
-				<CENTER>
-					<br><br>
-					<font size="5">update 2017 07 24.5</font><br>
-				</CENTER>
-			</div>
-		</footer>
-
 </html>
