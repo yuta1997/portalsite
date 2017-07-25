@@ -13,28 +13,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
  		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-	 	<script>
-	 	//トップスライド
-	  	$(function(){
-			setInterval("photoslide()", 50);
-		});
-	 
-		var current = 0;
-		function photoslide(){
-				current -= 1;
-			if(current == -300){
-				var copy = $(".post ul li:first").clone();
-				$(".post ul li:first").remove();
-				$(".post ul").append(copy);
-				current = 0;
-			};
-	
-			$('.post ul').css("margin-left", current+"px");	
-		}
-
-  		
-	</script>
+		<script type="text/javascript" src="javascript/test_slideshow_0725.js"></script>
+		<script type="text/javascript" src="javascript/test_tab_0725.js"></script>
 </head>
 
 	<body>
@@ -131,7 +111,78 @@
 					<section class="uk-width-medium-4-10 uk-width small-10-10 " style = "border: 1px solid">
 						<section class="uk-grid">
 
-						
+							<div id="choice">
+							  <div id="slide" class="tab01">
+							      <ul>
+							        <li><img src="imgs/1.jpg" ></li>
+
+							        <li><img src="imgs/2.jpg" ></li>
+
+							        <li><img src="imgs/3.jpg" ></li>
+
+							      </ul>
+
+							    </div>
+							  <div id="slide2" class="tab02">
+							      <ul>
+							        <li><img src="imgs/3.jpg" ></li>
+
+							        <li><img src="imgs/2.jpg" ></li>
+
+							        <li><img src="imgs/1.jpg" ></li>
+
+							      </ul>
+
+							    </div>
+							  <div id="slide3" class="tab03">
+							      <ul>
+							        <li><img src="imgs/3.jpg" ></li>
+
+							        <li><img src="imgs/2.jpg" ></li>
+
+							        <li><img src="0719/1.jpg" ></li>
+
+							      </ul>
+
+							    </div>
+
+							    <div id="slide4" class="tab04">
+							      <ul>
+							        <li><img src="imgs/1.jpg" ></li>
+
+							        <li><img src="imgs/2.jpg" ></li>
+
+							        <li><img src="imgs/2.jpg" ></li>
+
+							      </ul>
+
+							    </div>
+
+							    <div id="slide5" class="tab05">
+							      <ul>
+							        <li><img src="imgs/3.jpg" ></li>
+
+							        <li><img src="imgs/2.jpg" ></li>
+
+							        <li><img src="imgs/1.jpg" ></li>
+
+							      </ul>
+
+							    </div>
+
+								<div id="slide6" class="tab06">
+							      <ul>
+							        <li><img src="imgs/2.jpg" ></li>
+
+							        <li><img src="imgs/1.jpg" ></li>
+
+							        <li><img src="imgs/2.jpg" ></li>
+
+							      </ul>
+
+							    </div>
+								
+
 
 						</section>
 					</section>

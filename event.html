@@ -11,25 +11,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script>
-	  	$(function(){
-			setInterval("photoslide()", 50);	
-		});
-	 
-		var current = 0;
-		function photoslide(){
-				current -= 1;
-			if(current == -300){
-				var copy = $(".post ul li:first").clone();
-				$(".post ul li:first").remove();
-				$(".post ul").append(copy);
-				current = 0;
-			};
-	
-			$('.post ul').css("margin-left", current+"px");	
-		}
-
-  		</script>
+		<script type="text/javascript" src="javascript/test_slideshow_0725.js"></script>
 
 	</head>
 
