@@ -17,6 +17,7 @@ body {
 	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
 }
 div#slideshow {
+	margin-top: 5px;
 	margin-bottom: 10px;
 }
 img.slide{
@@ -24,6 +25,12 @@ img.slide{
 }
 div#content {
 	margin-bottom: 10px;
+}
+
+/*ログインフォーム*/
+div#form {
+	background-color: #ffffcc;
+	margin: 1px;
 }
 
 /* トップページ　CSS*/
@@ -48,7 +55,7 @@ img.infotitle{
 	height: 30px ;
 }
 
-/*ゼミ情報 CSS*/
+/*ゼミ情報ページ CSS*/
 div#semiphoto {
 	margin-top: 20px;
 }
@@ -56,17 +63,35 @@ div#incidents{
 	margin-top: 20px;
 	text-align: center;
 }
-div#pageanchor{
-	text-align: center;
-}
 div#semiinfo {
 	margin-top: 20px;
+}
+
+/*行事予定　CSS*/
+div#scedule{
+	margin-top: 20px;
+}
+div#sceduleimg{
+	text-align :center
+}
+div#scedulepdf{
+	text-align : center
+}
+p.intel {
+	color: #000;
+	font-size: 20px;
 }
 
 /*レポート状況*/
 div#reportinfo {
 	margin-top: 10px;
 	margin-bottom:  10px;
+}
+
+/*カレンダー*/
+div#pagetitle {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /*行事記録*/
@@ -83,19 +108,6 @@ div#pageanchor {
 	height: 150px;
 }
 
-/*行事*/
-div#event　{
-	margin-bottom: 10px;
-}
-div#intel {
-	margin:0;
-	padding: 0 0 8px 30px;
-	font-size: 15px;
-	color: #666;
-}
-
-/*カレンダー*/
-div#pagetitle {
-	margin-top: 10px;
-	margin-bottom: 10px;
+div#pageanchor{
+	text-align: center;
 }
