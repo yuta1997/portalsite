@@ -21,37 +21,44 @@
 	<body>
 		<!-- ヘッダー（タイトル） -->
 			<header>
-				<a href="index.html"><img src="imgs/title.png" title="title"></a>
+				<section class='uk-grid'>
+					<section class='uk-width-medium-7-10 uk-width-small-7-10'  style="border: 0px solid">
+						<a href="index.html"><img src="imgs/title.png" title="title"></a>
+					</section>
+					
+					<div id="roginform">
+						<section class='uk-width-medium-10-10 uk-width-small-10-10'  style="border: 1px solid">
+							<div id="form">
+								<section class="form-title">Login
+									<form action="index.html">
+										<section class="mail"><input type="email" name="mail" >Email
+						                <section class="pass"><input type="password" name="pass" >Password
+						                <section class="check"><input type="checkbox" name="checkbox" >パスワードを保存
+						                <section class="submit"><input type="submit" value="Login" ></section>
+						            </form>
+					            </section>
+					        </div>
+					    </section>
+					</div>
+				</section>
 			</header>
 				<!-- トップ画像 -->
 		<section class="uk-container uk-container-top">
-			
 			<section class='uk-width-medium-10-10 uk-width-small-10-10'>
-		
 				<div id="content" class="post">
-
   					<ul>
-
   						<img src="imgs/1.jpg" width="350">
- 
   						<img src="imgs/2.jpg" width="350">
-
 						<img src="imgs/3.jpg" width="350">
-
   						<img src="imgs/4.jpg" width="350">
-
   						<img src="imgs/1.jpg" width="350">
-
   					</ul>
-
 				</div>
-
 			</section>
 		</section>
 
 		<section class="uk-container uk-container-center">
 			<section class='uk-grid'>
-
 				<!-- 新着情報 -->
 				<section class='uk-width-medium-3-10 uk-width-small-5-10'  style="border: 0px solid">
 					<div id="infomation">
@@ -72,19 +79,16 @@
 					</div>
 				</section>
 					<!-- メニュー -->
-							<div class='uk-width-medium-5-10 uk-width-small-5-10'  style="border: 0px solid">
-								<div id="menu">
-									<a href="semi.html"><img src="imgs/semi.png" title="semi"></a>
+				<div class='uk-width-medium-5-10 uk-width-small-5-10'  style="border: 0px solid">
+					<div id="menu">
+						<a href="semi.html"><img src="imgs/semi.png" title="semi"></a>
+						<a href="event.html"><img src="imgs/event.png" title="event"></a>
+						<a href="report.html"><img src="imgs/report.png" title="report"></a>
+						<a href="calendar.html"><img src="imgs/calendar.png" title="calendar"></a>
+						<a href="incident.html"><img src="imgs/incident.png" title="incident"></a>
+					</div>
+				</div>
 
-									<a href="event.html"><img src="imgs/event.png" title="event"></a>
-
-									<a href="report.html"><img src="imgs/report.png" title="report"></a>
-
-									<a href="calendar.html"><img src="imgs/calendar.png" title="calendar"></a>
-
-									<a href="incident.html"><img src="imgs/incident.png" title="incident"></a>
-								</div>
-							</div>
 				<section class='uk-width-medium-2-10 uk-width-small-10-10' style="border: 0px solid">
 					<!-- カレンダー -->
 					<div id="calendar">
@@ -93,8 +97,5 @@
 				</section>
 			</section>
 		</section>
-		<footer>
-		
-		</footer>
 	</body>
 </html>

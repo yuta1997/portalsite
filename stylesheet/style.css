@@ -4,7 +4,6 @@ html{
 
 	}
 body {
-	background-image: url(../imgs/bg.png);
  	background-position: center center;
  	background-repeat: no-repeat;
  	background-attachment: fixed;
@@ -20,6 +19,23 @@ body {
 
 	line-height: 10px;
 }
+/*ここからログインフォーム*/
+
+div#form {
+	background-color:#FFFFFF;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+/*ここからトップページ*/
+div#header {
+	overflow:hidden;
+}
+div#titleimg{
+	float:left;
+}
+
+
 div#content {
 	margin-bottom: 10px;
 }
