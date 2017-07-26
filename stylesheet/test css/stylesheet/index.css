@@ -2,6 +2,7 @@
 html{
 	height: 100%;
 }
+
 body {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -14,7 +15,7 @@ body {
 	padding:10px;
 	color:#666;
 	line-height: 20px;
-	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
+	font-family: "メイリオ","Meiryo","ＭＳＰゴシック","Osaka","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
 }
 div#slideshow {
 	margin-top: 5px;
@@ -29,7 +30,8 @@ div#content {
 
 /*ログインフォーム*/
 div#form {
-	background-color: #ffffcc;
+	background-color: #ccffff;
+	color: #000
 	margin: 1px;
 }
 
@@ -50,7 +52,7 @@ div#infomation {
   background-color : white ;
 }
 img.infotitle{
-	width: 300px　;
+	width: 300px;
 	width: auto;
 	height: 30px ;
 }
@@ -95,6 +97,11 @@ div#pagetitle {
 }
 
 /*行事記録*/
+img.entrance{
+	margin-bottom: 10px;
+}
+p.memory {	 font-size: 15px; }
+p.subject {	font-size: 20px;	}
 div#incident_grid　{
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -106,8 +113,5 @@ div#incidents　{
 div#pageanchor {
 	width: 150px;
 	height: 150px;
-}
-
-div#pageanchor{
 	text-align: center;
 }
