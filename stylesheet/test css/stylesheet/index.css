@@ -1,0 +1,101 @@
+/* ページ全体　CSS*/
+html{
+	height: 100%;
+}
+body {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment:　fixed;
+	background-size: cover;
+	background-color: #ffffff;
+	height: 100%;
+	overflow-x:hidden;
+	margin:0px;
+	padding:10px;
+	color:#666;
+	line-height: 20px;
+	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
+}
+div#slideshow {
+	margin-bottom: 10px;
+}
+img.slide{
+	height: 200px;
+}
+div#content {
+	margin-bottom: 10px;
+}
+
+/* トップページ　CSS*/
+div#infotitle {
+	padding: 10px;
+	color: #fff;
+	background: #39f;
+	font-size: 15px;
+}
+#box{
+overflow-x:scroll;
+height:200px;
+}
+div#infomation {
+	margin : 0px ;
+ 	padding : 0px ;
+  background-color : white ;
+}
+img.infotitle{
+	width: 300px　;
+	width: auto;
+	height: 30px ;
+}
+
+/*ゼミ情報 CSS*/
+div#semiphoto {
+	margin-top: 20px;
+}
+div#incidents{
+	margin-top: 20px;
+	text-align: center;
+}
+div#pageanchor{
+	text-align: center;
+}
+div#semiinfo {
+	margin-top: 20px;
+}
+
+/*レポート状況*/
+div#reportinfo {
+	margin-top: 10px;
+	margin-bottom:  10px;
+}
+
+/*行事記録*/
+div#incident_grid　{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+div#incidents　{
+	margin-top: 20px;
+	text-align: center;
+}
+div#pageanchor {
+	width: 150px;
+	height: 150px;
+}
+
+/*行事*/
+div#event　{
+	margin-bottom: 10px;
+}
+div#intel {
+	margin:0;
+	padding: 0 0 8px 30px;
+	font-size: 15px;
+	color: #666;
+}
+
+/*カレンダー*/
+div#pagetitle {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
