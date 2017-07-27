@@ -1,8 +1,15 @@
 html{
 
 	height:100%;
+	min-height:100%;
 
 	}
+
+header{
+	height:100%;
+	min-height:100%;
+}
+
 body {
  	background-position: center center;
  	background-repeat: no-repeat;
@@ -10,7 +17,7 @@ body {
  	background-size: cover;  
  	background-color: #efefef;
  	background-image: url(imgs/bg.png);
-	height: 100%;
+	min-height: 100%;
 	overflow-x:hidden;
 	margin:0px;
 	padding:0px;
@@ -41,6 +48,13 @@ div#content {
 	margin-bottom: 10px;
 }
 
+.shadow {
+    margin-top: 5px; 
+    display: inline-block; 
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8); 
+}
+
+
 div#infotitle {
 	padding: 10px;
 	color: #fff;
@@ -51,12 +65,14 @@ div#infotitle {
 #box{
 overflow-x:scroll;
 height:200px;
+
 }
 
 div#infomation {
 	margin : 0px ;
  	padding : 0px ;
-  background-color : white ;
+  	background-color : white ;
+}
 }
 
 /*ここからゼミ情報スタイルシート*/
@@ -81,7 +97,7 @@ div#semicontents{
 		margin:10px auto;
 	}
 	div#item_a{
-		background:#6699CC;
+		background:#c7e68a;
 		color:#333;
 		text-align:center;
 		padding:10px;
@@ -103,7 +119,7 @@ div#semicontents{
 		margin:10px auto;
 	}
 	div#item_b{
-		background:#6699CC;
+		background:#c7e68a;
 		color:#333; 
 		text-align:center;
 		padding:10px;
@@ -125,7 +141,7 @@ div#semicontents{
 		margin:10px auto;
 	}
 	div#item_c{
-		background:#6699CC;
+		background:#c7e68a;
 		color:#333; 
 		text-align:center;
 		padding:10px;
@@ -156,7 +172,7 @@ div#reportinfo{
 		margin:10px auto;
 	}
 	div#item_teach_a{
-		background:#6699CC;
+		background:#c7e68a;
 		color:#333;
 		padding:10px;
 		cursor:pointer;
@@ -178,7 +194,7 @@ div#reportinfo{
 		margin:10px auto;
 	}
 	div#item_teach_b{
-		background:#6699CC;
+		background:#c7e68a;
 		color:#333;
 		padding:10px;
 		cursor:pointer;
@@ -201,7 +217,7 @@ div#reportinfo{
 		margin:10px auto;
 	}
 	div#item_teach_c{
-		background:#6699CC;
+		background:#c7e68a;
 		color:#333;
 		padding:10px;
 		cursor:pointer;
