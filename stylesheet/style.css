@@ -130,10 +130,6 @@ div#semicontents{
 
 /*ここからレポート状況スタイルシート*/
 
-	div#reportline{
-		background:#c7e68a;
-	}
-
 	div#reportinfo{
 		margin-top: 20px;
 	}
@@ -147,7 +143,13 @@ div#semicontents{
 		color:#333;
 		padding:10px;
 		cursor:pointer;
+		
 	}
+
+	.rotare{
+		transform: rotate(180deg);
+	}
+
 	div#contents_teach{
 		display:none;
 		padding:10px;
