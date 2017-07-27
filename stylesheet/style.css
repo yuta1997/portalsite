@@ -1,39 +1,43 @@
 html{
 
-	height:100%;
 	min-height:100%;
-
+	background-color: #FFFFFF;
 	}
 
 header{
 	height:100%;
 	min-height:100%;
+ 	background-color: #c7e68a;
 }
 
 body {
- 	background-position: center center;
  	background-repeat: no-repeat;
  	background-attachment: fixed;
  	background-size: cover;  
  	background-color: #efefef;
- 	background-image: url(imgs/bg.png);
-	min-height: 100%;
+ 	background-image: url(../imgs/null.png);
+ 	min-height: 100%;
+	width:100%;
 	overflow-x:hidden;
+
 	margin:0px;
 	padding:0px;
 	color:#666;
-	back
 	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
-
 	line-height: 10px;
 }
 /*ここからログインフォーム*/
 
-div#form {
-	background-color:#FFFFFF;
+div#loginform {
 	margin-top: 10px;
 	margin-left:10px;
 	margin-right:10px;
+	margin-bottom:10px;
+}
+
+div#form{
+	background-color:#FFFFFF;
+
 }
 /*ここからトップページ*/
 div#header {
@@ -53,7 +57,6 @@ div#content {
     display: inline-block; 
     box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8); 
 }
-
 
 div#infotitle {
 	padding: 10px;
@@ -99,7 +102,6 @@ div#semicontents{
 	div#item_a{
 		background:#c7e68a;
 		color:#333;
-		text-align:center;
 		padding:10px;
 		cursor:pointer;
 	}
@@ -121,7 +123,6 @@ div#semicontents{
 	div#item_b{
 		background:#c7e68a;
 		color:#333; 
-		text-align:center;
 		padding:10px;
 		cursor:pointer;
 	}
@@ -143,7 +144,6 @@ div#semicontents{
 	div#item_c{
 		background:#c7e68a;
 		color:#333; 
-		text-align:center;
 		padding:10px;
 		cursor:pointer;
 	}
@@ -156,6 +156,10 @@ div#semicontents{
 	div#contents_c p{
 		margin:10px 0;
 		border-bottom:dashed 1px #d6dddf;
+	}
+
+	.plus{
+		text-align:right;
 	}
 
 /*ここからレポート状況スタイルシート*/
@@ -267,9 +271,13 @@ div#calendar{
 div#calendarimg{
 	margin-top: 20px;
 }
-
-header{
-	background: #FFFFFF;
+footer{
+	text-align:center;
+	background-color: #c7e68a;
+	margin-top:5%;
+    bottom: 0;
+    width: 100%;
+    height:150px;
 }
 
 
