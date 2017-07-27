@@ -93,84 +93,6 @@ div#semicontents{
 }
 
 /*アコーディオン*/
-/*生産*/
-
-	div#container_a{
-		width:500px;
-		margin:10px auto;
-	}
-	div#item_a{
-		background:#c7e68a;
-		color:#333;
-		padding:10px;
-		cursor:pointer;
-	}
-	div#contents_a{
-		display:none;
-		padding:10px;
-		height:110px;
-		border:solid 1px #d6dddf;
-	}
-	div#contents_a p{
-		margin:10px 0;
-		border-bottom:dashed 1px #d6dddf;
-	}
-/*電子情報*/
-	div#container_b{
-		width:500px;
-		margin:10px auto;
-	}
-	div#item_b{
-		background:#c7e68a;
-		color:#333; 
-		padding:10px;
-		cursor:pointer;
-	}
-	div#contents_b{
-		display:none;
-		padding:10px;
-		height:110px;
-		border:solid 1px #d6dddf;
-	}
-	div#contents_b p{
-		margin:10px 0;
-		border-bottom:dashed 1px #d6dddf;
-	}
-/*電気エネルギー*/
-	div#container_c{
-		width:500px;
-		margin:10px auto;
-	}
-	div#item_c{
-		background:#c7e68a;
-		color:#333; 
-		padding:10px;
-		cursor:pointer;
-	}
-	div#contents_c{
-		display:none;
-		padding:10px;
-		height:110px;
-		border:solid 1px #d6dddf;
-	}
-	div#contents_c p{
-		margin:10px 0;
-		border-bottom:dashed 1px #d6dddf;
-	}
-
-	.plus{
-		text-align:right;
-	}
-
-/*ここからレポート状況スタイルシート*/
-
-div#reportinfo{
-	margin-top: 20px;
-}
-
-/*アコーディオン*/
-/* 先生A　*/
-
 	div#container_semi{
 
 		width:500px;
@@ -179,6 +101,7 @@ div#reportinfo{
 	}
 	div#item_semi{
 		background:#c7e68a;
+		margin-bottom:10px;
 		color:#333;
 		text-align:center;
 		padding:10px;
@@ -199,51 +122,44 @@ div#reportinfo{
 		border-bottom:dashed 1px #d6dddf;
 		text-decoration: underline;
 	}
-/* 先生B　*/
 
-	div#container_teach_b{
+
+	.plus{
+		text-align:right;
+	}
+
+/*ここからレポート状況スタイルシート*/
+
+	div#reportline{
+		background:#c7e68a;
+	}
+
+	div#reportinfo{
+		margin-top: 20px;
+	}
+	div#container_teach{
 		width:800px;
 		margin:10px auto;
 	}
-	div#item_teach_b{
+	div#item_teach{
+		margin-bottom:10px;
 		background:#c7e68a;
 		color:#333;
 		padding:10px;
 		cursor:pointer;
 	}
-	div#contents_teach_b{
+	div#contents_teach{
 		display:none;
 		padding:10px;
 		height:500px;
 		border:solid 1px #d6dddf;
 	}
-	div#contents_teach_b p{
+	div#contents_teach p{
 		margin:10px 0;
 		border-bottom:dashed 1px #d6dddf;
 	}
 
-/* 先生C　*/
 
-	div#container_teach_c{
-		width:800px;
-		margin:10px auto;
-	}
-	div#item_teach_c{
-		background:#c7e68a;
-		color:#333;
-		padding:10px;
-		cursor:pointer;
-	}
-	div#contents_teach_c{
-		display:none;
-		padding:10px;
-		height:500px;
-		border:solid 1px #d6dddf;
-	}
-	div#contents_teach_c p{
-		margin:10px 0;
-		border-bottom:dashed 1px #d6dddf;
-	}
 
 /*ここから行事記録スタイルシート*/
 div#incident_grid{
