@@ -1,21 +1,24 @@
 /* ページ全体　CSS*/
 html{
 	height: 100%;
+	min-height: 100%;
+	background-color: #efefef;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment:　fixed;
 }
 
 body {
-	background-position: center center;
-	background-repeat: no-repeat;
 	background-attachment:　fixed;
-	background-size: cover;
-	background-color: #ffffff;
-	height: 100%;
+	background-color: #efefef;
+	min-height: 100%;
 	overflow-x:hidden;
 	margin:0px;
 	padding:10px;
 	color:#666;
 	line-height: 20px;
-	font-family: "メイリオ","Meiryo","ＭＳＰゴシック","Osaka","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
+	font-family: "メイリオ","Meiryo","ＭＳＰゴシック","Osaka","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro";
 }
 div#slideshow {
 	margin-top: 5px;
@@ -31,8 +34,8 @@ div#content {
 /*ログインフォーム*/
 div#form {
 	background-color: #c7e68a;
-	color: #000
-	margin: 1px;
+	color: #000;
+	padding: 5px;
 }
 
 /* トップページ　CSS*/
@@ -79,10 +82,6 @@ div#sceduleimg{
 div#scedulepdf{
 	text-align : center
 }
-p.intel {
-	color: #000;
-	font-size: 20px;
-}
 
 /*レポート状況*/
 div#reportinfo {
@@ -100,8 +99,12 @@ div#pagetitle {
 img.entrance{
 	margin-bottom: 10px;
 }
-p.memory {	 font-size: 15px; }
-p.subject {	font-size: 20px;	}
+p.memory {
+	font-size: 15px;
+ }
+p.subject {
+	font-size: 20px;
+	}
 div#incident_grid　{
 	margin-top: 20px;
 	margin-bottom: 20px;

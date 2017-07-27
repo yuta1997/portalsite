@@ -1,13 +1,12 @@
 html{
-
 	height:100%;
-
 	}
+
 body {
  	background-position: center center;
  	background-repeat: no-repeat;
  	background-attachment: fixed;
- 	background-size: cover;  
+ 	background-size: cover;
  	background-color: #efefef;
  	background-image: url(imgs/bg.png);
 	height: 100%;
@@ -16,18 +15,17 @@ body {
 	padding:0px;
 	color:#666;
 	back
-	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"
-
+	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro";
 	line-height: 10px;
 }
 /*ここからログインフォーム*/
-
 div#form {
 	background-color:#FFFFFF;
 	margin-top: 10px;
 	margin-left:10px;
 	margin-right:10px;
 }
+
 /*ここからトップページ*/
 div#header {
 	overflow:hidden;
@@ -35,24 +33,19 @@ div#header {
 div#titleimg{
 	float:left;
 }
-
-
 div#content {
 	margin-bottom: 10px;
 }
-
 div#infotitle {
 	padding: 10px;
 	color: #fff;
 	background: #39f;
 	font-size: 15px;
 }
-
 #box{
 overflow-x:scroll;
 height:200px;
 }
-
 div#infomation {
 	margin : 0px ;
  	padding : 0px ;
@@ -60,11 +53,9 @@ div#infomation {
 }
 
 /*ここからゼミ情報スタイルシート*/
-
 div#semiinfo{
 	margin-top: 20px;
 }
-
 div#semiphoto{
 	margin-top: 20px;
 }
@@ -104,7 +95,7 @@ div#semicontents{
 	}
 	div#item_b{
 		background:#6699CC;
-		color:#333; 
+		color:#333;
 		text-align:center;
 		padding:10px;
 		cursor:pointer;
@@ -126,7 +117,7 @@ div#semicontents{
 	}
 	div#item_c{
 		background:#6699CC;
-		color:#333; 
+		color:#333;
 		text-align:center;
 		padding:10px;
 		cursor:pointer;
@@ -255,6 +246,3 @@ div#calendarimg{
 header{
 	background: #FFFFFF;
 }
-
-
-
