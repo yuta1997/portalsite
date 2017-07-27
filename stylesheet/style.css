@@ -171,25 +171,33 @@ div#reportinfo{
 /*アコーディオン*/
 /* 先生A　*/
 
-	div#container_teach_a{
-		width:800px;
+	div#container_semi{
+
+		width:500px;
 		margin:10px auto;
+
 	}
-	div#item_teach_a{
+	div#item_semi{
 		background:#c7e68a;
 		color:#333;
+		text-align:center;
 		padding:10px;
 		cursor:pointer;
 	}
-	div#contents_teach_a{
+	
+	}
+	div#contents_semi{
 		display:none;
 		padding:10px;
-		height:500px;
+		height:110px;
 		border:solid 1px #d6dddf;
+		font-weight: bold;
 	}
-	div#contents_teach_a p{
+	div#contents_semi p{
+		display:none;
 		margin:10px 0;
 		border-bottom:dashed 1px #d6dddf;
+		text-decoration: underline;
 	}
 /* 先生B　*/
 
