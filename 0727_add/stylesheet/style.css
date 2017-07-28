@@ -97,8 +97,8 @@ div#semicontents{
 
 		width:500px;
 		margin:10px auto;
-	}
 
+	}
 	div#item_semi{
 		background:#c7e68a;
 		margin-bottom:10px;
@@ -107,7 +107,12 @@ div#semicontents{
 		padding:10px;
 		cursor:pointer;
 	}
+
+	div#item_semi img.rotare{
+		transform: rotate(180deg);
+	}
 	
+	}
 	div#contents_semi{
 		display:none;
 		padding:10px;
@@ -115,38 +120,7 @@ div#semicontents{
 		border:solid 1px #d6dddf;
 		font-weight: bold;
 	}
-
 	div#contents_semi p{
-		display:none;
-		margin:10px 0;
-		border-bottom:dashed 1px #d6dddf;
-		text-decoration: underline;
-	}
-
-	div#container_teach{
-
-		width:500px;
-		margin:10px auto;
-	}
-
-	div#item_teach{
-		background:#c7e68a;
-		margin-bottom:10px;
-		color:#333;
-		text-align:center;
-		padding:10px;
-		cursor:pointer;
-	}
-	
-	div#contents_teach{
-		display:none;
-		padding:10px;
-		height:110px;
-		border:solid 1px #d6dddf;
-		font-weight: bold;
-	}
-
-	div#contents_teach p{
 		display:none;
 		margin:10px 0;
 		border-bottom:dashed 1px #d6dddf;
@@ -157,6 +131,8 @@ div#semicontents{
 	.plus{
 		text-align:right;
 	}
+
+
 
 /*ここからレポート状況スタイルシート*/
 
@@ -176,7 +152,7 @@ div#semicontents{
 		
 	}
 
-	.rotare{
+	div#item_teach img.rotare{
 		transform: rotate(180deg);
 	}
 
