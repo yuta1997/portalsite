@@ -1,4 +1,4 @@
-
+﻿
     $(document).ready(function(){
 
         $('#slide').hide(); //初期では非表示
@@ -760,8 +760,8 @@
     $(function(){
 
           
-          var time=1500;
-          var speed=1000;
+          var time=3000;
+          var speed=3000;
 
           $("slide15 ul li").css({"posithon":"relative","overflow":"hidden"});
           $("slide15 ul li").hide().css({"posotion":"absolute","top":0,"left":0});
@@ -787,39 +787,39 @@
       var tags = $(this).attr('id');
     $("#tags span").removeClass('select');
     $(this).addClass('select');
-    $("#choice div").fadeOut(500);
+    $("#choice div").fadeOut(2000);
       if(tags == 'tab02') {
-          $("#choice .tab02").fadeIn(500);
+          $("#choice .tab02").fadeIn(2000);
       } else if(tags == 'tab01') {
-          $("#choice .tab01").fadeIn(500);
+          $("#choice .tab01").fadeIn(2000);
       } else if(tags == 'tab03') {
-          $("#choice .tab03").fadeIn(500);
+          $("#choice .tab03").fadeIn(2000);
       } else if(tags == 'tab04') {
-          $("#choice .tab04").fadeIn(500);
+          $("#choice .tab04").fadeIn(2000);
       } else if(tags == 'tab05') {
-          $("#choice .tab05").fadeIn(500);
+          $("#choice .tab05").fadeIn(2000);
       } else if(tags == 'tab06') {
-          $("#choice .tab06").fadeIn(500);
+          $("#choice .tab06").fadeIn(2000);
       } else if(tags == 'tab07') {
-          $("#choice .tab07").fadeIn(500);
+          $("#choice .tab07").fadeIn(2000);
       } else if(tags == 'tab08') {
-          $("#choice .tab08").fadeIn(500);
+          $("#choice .tab08").fadeIn(2000);
       } else if(tags == 'tab09') {
-          $("#choice .tab09").fadeIn(500);
+          $("#choice .tab09").fadeIn(2000);
       } else if(tags == 'tab10') {
-          $("#choice .tab10").fadeIn(500);
+          $("#choice .tab10").fadeIn(2000);
       } else if(tags == 'tab11') {
-          $("#choice .tab11").fadeIn(500);
+          $("#choice .tab11").fadeIn(2000);
       } else if(tags == 'tab12') {
-          $("#choice .tab12").fadeIn(500);
+          $("#choice .tab12").fadeIn(2000);
       } else if(tags == 'tab13') {
-          $("#choice .tab13").fadeIn(500);
+          $("#choice .tab13").fadeIn(2000);
       } else if(tags == 'tab14') {
-          $("#choice .tab14").fadeIn(500);
+          $("#choice .tab14").fadeIn(2000);
       } else if(tags == 'tab15') {
-          $("#choice .tab15").fadeIn(500);
+          $("#choice .tab15").fadeIn(2000);
       }  else {
-          $("#choice div").fadeIn(500);
+          $("#choice div").fadeIn(2000);
       }
     });
   });

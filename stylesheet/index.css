@@ -1,25 +1,27 @@
 /* ページ全体　CSS*/
 html{
-	height: 100%;
-	min-height: 100%;
-}
+	min-height:100%;
+	background-color: #FFFFFF;
+	}
 header{
 	height:100%;
 	min-height:100%;
+ 	background-color: #c7e68a;
 }
 body {
-	background-color: #efefef;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment:　fixed;
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-color: #efefef;
+ 	background-image: url(../imgs/null.png);
+ 	min-height: 100%;
+	width:100%;
 	overflow-x:hidden;
-	min-height: 100%;
-	margin:5px;
-	padding:5px;
-	color:#000;
-	line-height: 17px;
-	font-family: "メイリオ","Meiryo","ＭＳＰゴシック","Osaka","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro";
+	margin:0px;
+	padding:0px;
+	color:#666;
+	font-family: "メイリオ","Meiryo","ＭＳ Ｐゴシック","Osaka","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro";
+	line-height: 15px;
 }
 div#slideshow {
 	margin-top: 5px;
@@ -56,13 +58,13 @@ div#infotitle {
 	font-size: 15px;
 }
 #box{
-overflow-x:scroll;
-height:200px;
+	overflow-x:scroll;
+	height:200px;
 }
 div#infomation {
 	margin : 0px ;
  	padding : 0px ;
-  background-color : white ;
+	  background-color : white ;
 }
 img.infotitle{
 	width: 300px;
@@ -71,8 +73,63 @@ img.infotitle{
 }
 
 /*ゼミ情報ページ CSS*/
+div#container_semi{
+	width: 500px;
+	margin: 10px auto; 
+}
+div#item_semi{
+	background:#c7e68a;
+	margin-bottom:10px;
+	color:#333;
+	text-align:center;
+	padding:10px;
+	cursor:pointer;
+}
+div#contents_semi{
+	display:none;
+	padding:10px;
+	height:110px;
+	border:solid 1px #d6dddf;
+	font-weight: bold;
+}
+
+div#contents_semi p{
+	display:none;
+	margin:10px 0;
+	border-bottom:dashed 1px #d6dddf;
+	text-decoration: underline;
+}
+div#container_teach{
+	width:500px;
+	margin:10px auto;
+}
+div#item_teach{
+	background:#c7e68a;
+	margin-bottom:10px;
+	color:#333;
+	text-align:center;
+	padding:10px;
+	cursor:pointer;
+}
+div#contents_teach {
+	display:none;
+	padding:10px;
+	height:110px;
+	border:solid 1px #d6dddf;
+	font-weight: bold;
+}
+div#contents_teach p{
+	display:none;
+	margin:10px 0;
+	border-bottom:dashed 1px #d6dddf;
+	text-decoration: underline;
+}
+.plus{
+	text-align:right;
+}
 div#semiphoto {
 	margin-top: 20px;
+	margin-bottom: 100px;
 }
 div#incidents{
 	margin-top: 20px;
@@ -83,21 +140,49 @@ div#semiinfo {
 }
 
 /*行事予定　CSS*/
-div#intel{
-	margin-top: 10px;
-	margin-bottom: 10px
+div#scedule{
+	margin-top: 20px;
 }
 div#sceduleimg{
 	text-align :center
 }
 div#scedulepdf{
+	margin-top: 5px;
+	font-size: 15px;
 	text-align : center
-}
-div#scedulepdf {
-	margin-top: 10px;
 }
 
 /*レポート状況 CSS*/
+div#reportinfo{
+		margin-top: 20px;
+	}
+	div#container_teach{
+		width:100% auto;
+		margin:10px auto;
+	}
+	div#item_teach{
+		width: 100%;
+		margin-bottom:10px;
+		background:#c7e68a;
+		color:#333;
+		padding:10px;
+		cursor:pointer;
+	}
+	.rotare{
+		transform: rotate(180deg);
+	}
+	div#contents_teach{
+		display:none;
+		padding:10px;
+		height:100%;
+		border:solid 1px #d6dddf;
+	}
+	div#contents_teach p{
+		margin:10px 0;
+		border-bottom:dashed 1px #d6dddf;
+	}
+
+
 div#reportinfo {
 	margin-top: 10px;
 	margin-bottom:  10px;
@@ -113,12 +198,7 @@ div#pagetitle {
 img.entrance{
 	margin-bottom: 10px;
 }
-p.memory {
-	font-size: 15px;
- }
-p.subject {
-	font-size: 20px;
-	}
+
 div#incident_grid　{
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -127,7 +207,15 @@ div#incidents　{
 	margin-top: 20px;
 	text-align: center;
 }
-
 div#pageanchor{
 	text-align: center;
+}
+
+footer{
+	text-align:center;
+	background-color: #c7e68a;
+	margin-top:5%;
+    bottom: 0;
+    width: 100%;
+    height:150px;
 }
