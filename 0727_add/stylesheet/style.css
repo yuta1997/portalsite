@@ -107,6 +107,10 @@ div#semicontents{
 		padding:10px;
 		cursor:pointer;
 	}
+
+	div#item_semi img.rotare{
+		transform: rotate(180deg);
+	}
 	
 	}
 	div#contents_semi{
